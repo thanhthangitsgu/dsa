@@ -11,5 +11,8 @@ public class Main {
 
         Dijkstra dijkstra = new Dijkstra();
         dijkstra.implementAlgorithm(graph);
+//
+//        Prim prim = new Prim();
+//        prim.implementAlgorithm(graph);
     }
 }
