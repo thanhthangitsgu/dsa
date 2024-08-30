@@ -37,5 +37,19 @@ public class Prim {
             }
         }
 
+        int total = Arrays.stream(d).sum();
+        showResult(parent, total);
+    }
+
+    private void showResult(int[] parent, int total) {
+        System.out.println("Prim algorithm: ");
+
+        for (int i = 0; i < parent.length; i++) {
+            if (parent[i] >= 0) {
+                System.out.println(i + " " + parent[i]);
+            }
+        }
+
+        System.out.println("Total weight: " + total);
     }
 }

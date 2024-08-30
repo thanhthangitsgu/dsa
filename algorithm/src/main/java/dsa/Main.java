@@ -9,10 +9,13 @@ public class Main {
         FileReader fileReader = new FileReader();
         Graph graph = fileReader.readGraphFromFile("/Users/thanhthang/Desktop/Project/dsa/domain/src/main/java/dsa/asset/graph-9.txt");
 
-        Dijkstra dijkstra = new Dijkstra();
-        dijkstra.implementAlgorithm(graph);
-//
-//        Prim prim = new Prim();
-//        prim.implementAlgorithm(graph);
+//        Dijkstra dijkstra = new Dijkstra();
+//        dijkstra.implementAlgorithm(graph);
+
+        Prim prim = new Prim();
+        prim.implementAlgorithm(graph);
+
+        Kruskal kruskal = new Kruskal();
+        kruskal.implementAlgorithm(graph);
     }
 }
