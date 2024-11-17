@@ -44,7 +44,7 @@ public class Dijkstra {
         }
 
         for (int i = 0; i < cost.length; i++) {
-            System.out.print(STR."\{start} -> \{i} : cost = \{cost[i]}");
+//            System.out.print(STR."\{start} -> \{i} : cost = \{cost[i]}");
             traceParent(i, parent);
         }
     }
@@ -67,7 +67,7 @@ public class Dijkstra {
         }
 
         for (int vertex: rs.reversed()) {
-            System.out.print(STR."\{vertex} ");
+//            System.out.print(STR."\{vertex} ");
         }
 
         System.out.println();

@@ -4,18 +4,22 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 public class MostBeautifulItemForEachQuery {
+    public static void main(String[] args) {
+        MostBeautifulItemForEachQuery solution = new MostBeautifulItemForEachQuery();
+        solution.solve();
+    }
 
     public static String refLink() {
         return "https://leetcode.com/problems/most-beautiful-item-for-each-query/description/";
     }
 
-    public static void solve() {
+    public void solve() {
         int[][] items = new int[][]{{10,1000}};
         int[] queries =new int[]{5};
         System.out.print(maximumBeauty(items, queries).length);
     }
 
-    public static int[] maximumBeauty(int[][] items, int[] queries) {
+    public int[] maximumBeauty(int[][] items, int[] queries) {
         int[] result = new int[queries.length];
         Arrays.sort(items, Comparator.comparingInt(a -> a[0]));
         int[] beautyProcessArr = new int[items.length];
@@ -37,7 +41,7 @@ public class MostBeautifulItemForEachQuery {
         return result;
     }
 
-    public static int binarySearch(int key, int[] arr) {
+    public int binarySearch(int key, int[] arr) {
         int left = 0;
         int right = arr.length;
         while (left < right) {
