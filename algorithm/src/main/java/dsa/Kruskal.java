@@ -7,7 +7,7 @@ import dsa.graph.Graph;
 import java.util.PriorityQueue;
 
 public class Kruskal {
-    int find(int u, int parent[]) {
+    int find(int u, int[] parent) {
         if (parent[u] == u) {
             return u;
         }
@@ -15,7 +15,7 @@ public class Kruskal {
         return parent[u] = find(parent[u], parent);
     }
 
-    boolean join(int u, int v, int parent[]) {
+    boolean join(int u, int v, int[] parent) {
         u = find(u, parent);
         v = find(v, parent);
 
