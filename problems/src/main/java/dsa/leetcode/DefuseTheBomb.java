@@ -12,6 +12,7 @@ public class DefuseTheBomb {
             System.out.print(j + " ");
         }
     }
+
     public int[] decrypt(int[] code, int k) {
         int length = code.length;
         int[] result = new int[length];
